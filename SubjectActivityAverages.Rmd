@@ -1,0 +1,81 @@
+---
+title: "Subjects' Activity Averages of `mean()` and `std()`"
+author: "B Baillargeon"
+date: "Thursday, April 23, 2015"
+output: html_document
+---
+
+## Ordinal column ("field") names and class
+
+Column #  | Column Name | Class of variable
+--------- | ----------- | -----------------
+1  |	Subject	| as.factor(numeric)
+2	|	Activity	| as.factor(character)
+3  |	MeanOf_tBodyAccXmean	| numeric
+4	|	MeanOf_tBodyAccYmean	| numeric
+5	|	MeanOf_tBodyAccZmean	| numeric
+6	|	MeanOf_tBodyAccXstdev	| numeric
+7	|	MeanOf_tBodyAccYstdev	| numeric
+8	|	MeanOf_tBodyAccZstdev	| numeric
+9	|	MeanOf_tGravityAccXmean	| numeric
+10	|	MeanOf_tGravityAccYmean	| numeric
+11	|	MeanOf_tGravityAccZmean	| numeric
+12	|	MeanOf_tGravityAccXstdev	| numeric
+13	|	MeanOf_tGravityAccYstdev	| numeric
+14	|	MeanOf_tGravityAccZstdev	| numeric
+15	|	MeanOf_tBodyAccJerkXmean	| numeric
+16	|	MeanOf_tBodyAccJerkYmean	| numeric
+17	|	MeanOf_tBodyAccJerkZmean	| numeric
+18	|	MeanOf_tBodyAccJerkXstdev	| numeric
+19	|	MeanOf_tBodyAccJerkYstdev	| numeric
+20	|	MeanOf_tBodyAccJerkZstdev	| numeric
+21	|	MeanOf_tBodyGyroXmean	| numeric
+22	|	MeanOf_tBodyGyroYmean	| numeric
+23	|	MeanOf_tBodyGyroZmean	| numeric
+24	|	MeanOf_tBodyGyroXstdev	| numeric
+25	|	MeanOf_tBodyGyroYstdev	| numeric
+26	|	MeanOf_tBodyGyroZstdev	| numeric
+27	|	MeanOf_tBodyGyroJerkXmean	| numeric
+28	|	MeanOf_tBodyGyroJerkYmean	| numeric
+29	|	MeanOf_tBodyGyroJerkZmean	| numeric
+30	|	MeanOf_tBodyGyroJerkXstdev	| numeric
+31	|	MeanOf_tBodyGyroJerkYstdev	| numeric
+32	|	MeanOf_tBodyGyroJerkZstdev	| numeric
+33	|	MeanOf_tBodyAccMagmean	| numeric
+34	|	MeanOf_tBodyAccMagstdev	| numeric
+35	|	MeanOf_tGravityAccMagmean	| numeric
+36	|	MeanOf_tGravityAccMagstdev	| numeric
+37	|	MeanOf_tBodyAccJerkMagmean	| numeric
+38	|	MeanOf_tBodyAccJerkMagstdev	| numeric
+39	|	MeanOf_tBodyGyroMagmean	| numeric
+40	|	MeanOf_tBodyGyroMagstdev	| numeric
+41	|	MeanOf_tBodyGyroJerkMagmean	| numeric
+42	|	MeanOf_tBodyGyroJerkMagstdev	| numeric
+43	|	MeanOf_fBodyAccXmean	| numeric
+44	|	MeanOf_fBodyAccYmean	| numeric
+45	|	MeanOf_fBodyAccZmean	| numeric
+46	|	MeanOf_fBodyAccXstdev	| numeric
+47	|	MeanOf_fBodyAccYstdev	| numeric
+48	|	MeanOf_fBodyAccZstdev	| numeric
+49	|	MeanOf_fBodyAccJerkXmean	| numeric
+50	|	MeanOf_fBodyAccJerkYmean	| numeric
+51	|	MeanOf_fBodyAccJerkZmean	| numeric
+52	|	MeanOf_fBodyAccJerkXstdev	| numeric
+53	|	MeanOf_fBodyAccJerkYstdev	| numeric
+54	|	MeanOf_fBodyAccJerkZstdev	| numeric
+55	|	MeanOf_fBodyGyroXmean	| numeric
+56	|	MeanOf_fBodyGyroYmean	| numeric
+57	|	MeanOf_fBodyGyroZmean	| numeric
+58	|	MeanOf_fBodyGyroXstdev	| numeric
+59	|	MeanOf_fBodyGyroYstdev	| numeric
+60	|	MeanOf_fBodyGyroZstdev	| numeric
+61	|	MeanOf_fBodyAccMagmean	| numeric
+62	|	MeanOf_fBodyAccMagstdev	| numeric
+63	|	MeanOf_fBodyAccJerkMagmean	| numeric
+64	|	MeanOf_fBodyAccJerkMagstdev	| numeric
+65	|	MeanOf_fBodyGyroMagmean	| numeric
+66	|	MeanOf_fBodyGyroMagstdev	| numeric
+67	|	MeanOf_fBodyGyroJerkMagmean	| numeric
+68	|	MeanOf_fBodyGyroJerkMagstdev	| numeric
+
+

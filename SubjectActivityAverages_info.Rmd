@@ -1,0 +1,30 @@
+---
+title: "Subjects' Activity Aggregating Averages of `mean()` and `std()`"
+author: "B Baillargeon"
+date: "Thursday, April 23, 2015"
+output: html_document
+---
+
+#developing the compact, tidy, Subject-Activity averages dataset  
+
+##Extracting data from the original UCI HAR dataset   
+
+Reviewing the *UCI HAR Dataset* files, we see there were 66 total columns of interest: 33 `mean` and 33 `std` all containing numeric measures.  
+
+I extracted these 66 into a working dataset, one each for 'test' and 'train' then worked on massaging these files to the ultimate result of having 
+
+* for each of the 30 Subjects in the study  
+    + 6 records    
+    + giving a total of 180 records   
+* each record *now* holds in its 66 numeric measure columns **the mean of** the previous voluminous record count for each variable.   
+* while a bit odd, the instructions lead to us having the "Mean of " mean measures, as well as "Mean of " standard deviation measures.   
+* Records are ordered by Subject, then by Activity, so all information re a given Subject is within 6 lines.   
+    
+  
+## Writing the project file to the repository  
+`.\\Tidydata\\TidySubjActAverages.txt` was created from the internal dataset.  
+
+* Prior to writing the dataset file, I `setnames` to `paste0` *"MeansOf_"* in front of the 66 numeric columns' names to ensure the message is clear -these values are now Means and different from the input datasets' estimated means() and std() from the device signals.  
+
+The complete list of variables of each calculated means() is available in 'SubjectActivityAverages.Rmd'   
+
